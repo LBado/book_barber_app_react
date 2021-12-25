@@ -35,8 +35,6 @@ const ContactForm = ({
   const [timeSelect, setTimeSelect] = useState({});
   const [priceInput, setPriceInput] = useState({});
 
-  console.log('Loaded');
-
   const { timeSchedule } = useScheduleGenerator(
     barberSelect.selectedValue,
     dateInput.selectedValue,
@@ -116,11 +114,11 @@ const ContactForm = ({
         />
         <LNameInput setLNameInput={setLNameInput} />
       </InputRow>
-        {nameInput.hasError || lNameInput.hasError ? (
-          <p className="nameInputError">Please enter your full name</p>
-        ) : (
-          ''
-        )}
+      {nameInput.hasError || lNameInput.hasError ? (
+        <p className="nameInputError">Please enter your full name</p>
+      ) : (
+        ''
+      )}
       <InputRow>
         <EmailInput setEmailInput={setEmailInput} />
         <PhoneInput setPhoneInput={setPhoneInput} />

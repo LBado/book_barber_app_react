@@ -3,7 +3,6 @@ import useInputValidator from '../../Hooks/useInputValidator';
 import '../../Styles/css/InputContainer.css';
 import '../../Styles/css/Error.css';
 const LNameInput = ({ setLNameInput }) => {
-  console.log('loading name input');
   const nameValFn = (value) => value.trim() !== '' && !/[^a-zA-Z]/.test(value);
 
   const {

@@ -7,9 +7,7 @@ import LoadingSpinner from '../Components/UI/LoadingSpinner';
 
 const Booking = () => {
   const [isPhone, setIsPhone] = useState(false);
-  const [dbData, setDbData] = useState([]);
-  const [servicesData, setServicesData] = useState([]);
-  const [appointmentsData, setAppointmentsData] = useState([]);
+  const [dbData, setDbData] = useState({});
 
   useEffect(() => {
     if (window.screen.width < 768) {
@@ -56,7 +54,7 @@ const Booking = () => {
         <p>Great Hair Doesn't Happen By Chance. It Happens By Appointment!</p>
         {!isPhone && <p>So Don't Wait And Book Your Appointment Now</p>}
       </header>
-      {dbData.length !== 0 ? (
+      {Object.keys(dbData).length !== 0 ? (
         <div className="contentContainer">
           <div className="imageContainer">
             <img alt="barber" src={barberImg}></img>
