@@ -24,10 +24,6 @@ const useTimeValidator = (defaultValue, dateValid, isWeekend) => {
     setIsTouched(true);
   }, []);
 
-  const valueHandler = (value) => {
-    setSelectedValue(value);
-  };
-
   const reset = useCallback(() => {
     setSelectedValue('');
     setIsTouched(false);
@@ -39,7 +35,6 @@ const useTimeValidator = (defaultValue, dateValid, isWeekend) => {
     isValid,
     hasError,
     valueChangeHandler,
-    valueHandler,
     selectBlurHandler,
     reset,
   };

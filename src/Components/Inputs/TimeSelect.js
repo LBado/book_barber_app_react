@@ -15,7 +15,6 @@ const TimeSelect = ({
     isValid,
     hasError,
     valueChangeHandler,
-    valueHandler,
     selectBlurHandler,
     reset,
   } = useTimeValidator('default', dateIsValid, dateIsWeekend);

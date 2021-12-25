@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import useInputValidator from '../../Hooks/useInputValidator';
 import '../../Styles/css/InputContainer.css';
 import '../../Styles/css/Error.css';
-const NameInput = ({ setNameInput, lHasError }) => {
+const NameInput = ({ setNameInput }) => {
   const nameValFn = (value) => value.trim() !== '' && !/[^a-zA-Z]/.test(value);
 
   const {
