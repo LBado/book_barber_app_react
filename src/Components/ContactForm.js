@@ -108,10 +108,7 @@ const ContactForm = ({
     <form onSubmit={formSubmitHandler} className="formContainer">
       <h3 className="title">BOOK YOUR APPOINTMENT</h3>
       <InputRow>
-        <NameInput
-          setNameInput={setNameInput}
-          lHasError={lNameInput.hasError}
-        />
+        <NameInput setNameInput={setNameInput} />
         <LNameInput setLNameInput={setLNameInput} />
       </InputRow>
       {nameInput.hasError || lNameInput.hasError ? (
