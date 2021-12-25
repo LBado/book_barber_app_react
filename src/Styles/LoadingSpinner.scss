@@ -1,0 +1,39 @@
+.spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.spinner:after {
+  content: ' ';
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(255, 166, 0);
+  border-color: transparent rgb(255, 166, 0) transparent rgb(255, 166, 0);
+  animation: spinner 1.2s linear infinite;
+}
+.spinner:before {
+  content: ' ';
+  position: absolute;
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid rgb(255, 123, 0);
+  border-color: rgb(255, 123, 0) transparent rgb(255, 123, 0) transparent;
+  transform: rotateZ(30deg);
+  animation: spinner 0.9s linear infinite;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

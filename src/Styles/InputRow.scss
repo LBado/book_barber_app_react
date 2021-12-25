@@ -1,0 +1,12 @@
+@import './phoneStyleUtil.scss';
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+
+  @include phone {
+    margin: 0px 0;
+    display: block;
+  }
+}

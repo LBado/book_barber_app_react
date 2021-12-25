@@ -1,0 +1,31 @@
+.success {
+  width: 100vw;
+  height: 100vh;
+  background-color: #fbf4eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-family: 'Squada One';
+  font-size: 37px;
+  font-weight: 500;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.imageContainer {
+  border: 4px solid #1e2841;
+  margin: 20px;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border: 8px solid transparent;
+  cursor: pointer;
+}

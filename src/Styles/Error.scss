@@ -1,0 +1,21 @@
+@import './phoneStyleUtil.scss';
+
+.inputError {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(255, 81, 81);
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.nameInputError {
+  font-family: 'Roboto Slab', serif;
+  color: rgb(255, 81, 81);
+  font-size: 14px;
+  font-weight: 500;
+  border: 0;
+  width: 100%;
+  margin-top: -8px;
+}

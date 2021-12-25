@@ -1,0 +1,24 @@
+@import './phoneStyleUtil.scss';
+
+.selectContainer {
+  width: calc(100% / 2 - 4px);
+
+  @include phone {
+    margin: 8px 0;
+    width: 100%;
+  }
+
+  select {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    color: grey;
+    border: 0;
+    padding: 10px 0px;
+    text-indent: 5px;
+    border-radius: 5px;
+    width: 100%;
+  }
+}
+
